@@ -54,7 +54,9 @@ First, let’s set up and verify the back-end API server is running.
      - **(Optional)** Update `Models` to the Azure OpenAI deployment or OpenAI models you want to use. 
        - For `Completion` and `Planner`, CopilotChat is optimized for Chat completion models, such as gpt-3.5-turbo and gpt-4.
          > **Important:** gpt-3.5-turbo is normally labelled as "`gpt-35-turbo`" (no period) in Azure OpenAI and "`gpt-3.5-turbo`" (with a period) in OpenAI.
+         > **Important:** if use Azure OpenAI please input deployment name here not model name
        - For `Embedding`, `text-embedding-ada-002` is sufficient and cost-effective for generating embeddings.
+         > **Important:** if use Azure OpenAI please input deployment name here not model name
    
    - **(Optional)** To enable speech-to-text for chat input, update the `AzureSpeech` configuration section:
      > If you have not already, you will need to [create an Azure Speech resource](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesSpeechServices)
